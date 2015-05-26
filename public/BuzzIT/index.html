@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>BuzzIT</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script type="text/javascript" src="http://lib.sinaapp.com/js/jquery/1.7.2/jquery.min.js"></script>
+<script type="text/javascript" src="http://lib.sinaapp.com/js/jquery-mobile/1.3.0/jquery.mobile-1.3.0.min.js"></script>
+<link rel="stylesheet" href="http://lib.sinaapp.com/js/jquery-mobile/1.3.0/jquery.mobile-1.3.0.min.css" />
+</head>
+<body>
+<!-- BuzzIT page -->
+<div data-role="page" id="BuzzIT">
+
+    <div data-role="header" data-position="inline">
+	<h1>BuzzIT</h1>
+    </div>
+    <div role="main" class="ui-content">
+        <p>BuzzIT 联系人相关信息，支持查询功能，点击单项查看详细</p>
+		<p>BuzzIT Telephone dispatch 4006702255</p>
+        <ul data-role="listview" data-theme="a" data-filter="true" data-filter-placeholder="...">
+			 <li><a href="#" onclick="showPhone('','*86-903-8303')">● SHYi Jun Peng/China/IBM </a></li>
+			<li><a href="#" onclick="showPhone('','*86-906-1097')">● BJZhi ZZ Yang/China/IBM </a></li>
+			<li><a href="#" onclick="showPhone('','*86-907-5077')">● CDZheng Mao ZM He/China/BE/IJV </a></li>
+			<li><a href="#" onclick="showPhone('','*86-906-1098')">● DL16Yi DL Qu/China/IBM </a></li>
+			<li><a href="#" onclick="showPhone('','*86-906-1091')">● DL(SO2)De Xiu DX Yu/China/BE/IJV </a></li>
+			<li><a href="#" onclick="showPhone('','*86-906-1096')">● DL(SO3)Yu Xiao Xiao/China/IBM </a></li>
+			<li><a href="#" onclick="showPhone('','*86-903-9608')">● DL(SO4)Kun LK Lu/China/IBM </a></li>
+			<li><a href="#" onclick="showPhone('','*86-903-9616')">● DL(Leader)Xiao Bin Lv/China/IBM </a></li>
+			<li><a href="#" onclick="showPhone('','*86-903-9610')">● SH(TC)Liang LL Xu/China/BE/IJV </a></li>
+			<li><a href="#" onclick="showPhone('','*86-902-0373')">● SH(TC)Heng HG Gao/China/BE/IJV </a></li>
+			<li><a href="#" onclick="showPhone('','*86-907-0377')">● SH(TC)Bill YS Zhong/China/IBM </a></li>
+			<li><a href="#" onclick="showPhone('','*86-906-3358')">● SH(KIC)Cheng CT Tang/China/BE/IJV </a></li>
+			<li><a href="#" onclick="showPhone('','*86-991-3969')">● SuzhouJian Feng JF Wu/China/IBM </a></li>                                       
+			<li><a href="#" onclick="showPhone('','*86-906-4338')">De Zhen DZ Shi/China/IBM</a></li> 
+		</ul>
+		<br/>
+    </div>
+    <div data-role="footer" data-position="fixed">
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#BuzzIT" data-icon="star" class="star">BuzzIT</a></li>
+                <li><a href="#LocalSite" data-icon="star" >LocalSite</a></li>
+                <li><a href="#Printer" data-icon="star">Printer</a></li>
+            </ul>
+        </div><!-- /navbar -->
+    </div>
+    </div>
+<!-- /footer -->
+
+<!-- LocalSite page -->
+<div data-role="page" id="LocalSite">
+
+    <div data-role="header" data-position="inline">
+	<h1>LocalSite</h1>
+    </div>
+    <div role="main" class="ui-content">
+        <p>LocalSite </p>
+        <!-- <label for="name">Light联系电话:</label>
+		<input type="text" name="name" id="name" value="38866" readOnly > -->
+		<ul data-role="listview" data-theme="a" data-filter="true" data-filter-placeholder="...">
+			<li><a href="#" onclick="showPhone2('SH','38866','021-80138866','SH FM Helpdesk/China/IBM','15921485867 / 13817306843')"> ● SH FM Helpdesk/China/IBM</a></li>
+			<li><a href="#" onclick="showPhone2('SuZ','45111','0512-88955111','SuZ FM Helpdesk/China/IBM','13812699296')"> ● SuZ FM Helpdesk/China/IBM</a></li>
+			<li><a href="#" onclick="showPhone2('DL','60112','0411-88150112','DL FM Helpdesk/China/IBM','15940857525 / 13322209751')"> ● DL FM Helpdesk/China/IBM</a></li>
+			<li><a href="#" onclick="showPhone2('SZ','*869064343','0755-21604343','SZ FM Helpdesk/China/IBM','13538035010 / 18938638963')"> ●  	SZ FM Helpdesk/China/IBM</a></li>
+			<li><a href="#" onclick="showPhone2('BJ','13200','010-6361 3200','JLL Helpdesk/China/Contr/IBM','N/A')"> ● JLL Helpdesk/China/Contr/IBM</a></li>
+			<li><a href="#" onclick="showPhone2('CD','45111','010-6361 3200','CD FM Helpdesk/China/IBM','18011568663 / 13541187987')"> ● CD FM Helpdesk/China/IBM</a></li>
+			<li><a href="#" onclick="showPhone2('WH','45111','027-59269119','WH FM Helpdesk/China/IBM','15850288076')"> ● WH FM Helpdesk/China/IBM</a></li>
+		</ul>
+    </div>
+    <div data-role="footer" data-position="fixed">
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#BuzzIT" data-icon="star" class="star">BuzzIT</a></li>
+                <li><a href="#LocalSite" data-icon="star" >LocalSite</a></li>
+                <li><a href="#Printer" data-icon="star">Printer</a></li>
+            </ul>
+        </div><!-- /navbar -->
+    </div>
+    </div>
+<!-- /footer -->
+
+<!-- Printer page -->
+<div data-role="page" id="Printer">
+
+    <div data-role="header" data-position="inline">
+	<h1>Printer</h1>
+    </div>
+    <div role="main" class="ui-content">
+        <p> Printer</p>
+        <label for="name">联系电话:</label>
+		<input type="text" name="name" id="name" value="*869915032" readOnly >
+        <p id=""> </p> 
+    </div>
+    <div data-role="footer" data-position="fixed">
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#BuzzIT" data-icon="star" class="star">BuzzIT</a></li>
+                <li><a href="#LocalSite" data-icon="star" >LocalSite</a></li>
+                <li><a href="#Printer" data-icon="star">Printer</a></li>
+            </ul>
+        </div><!-- /navbar -->
+    </div>
+    </div>
+<!-- /footer -->
+
+<!-- Light page -->
+<!-- <div data-role="page" id="Light">
+
+    <div data-role="header">
+    </div>
+    <div role="main" class="ui-content">
+        <p> Light</p>
+        <label for="name">联系电话:</label>
+		<input type="text" name="name" id="name" value="38866" readOnly >
+        <p id=""> </p> 
+    </div>
+    <div data-role="footer" data-position="fixed">
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#BuzzIT" data-icon="star" class="star">BuzzIT</a></li>
+                <li><a href="#LocalSite" data-icon="star" >LocalSite</a></li>
+                <li><a href="#Printer" data-icon="star">Printer</a></li>
+            </ul>
+        </div>/navbar
+    </div>
+/footer
+</div> -->
+
+<!-- show page -->
+<div data-role="page" id="show">
+	<div data-role="header" data-position="inline">
+	<h1>详细信息</h1>
+    </div>
+    <div>
+		<label id="personDesc">描述：修电脑的</label>
+			<label for="telephone">联系电话:</label>
+			<input type="text" name="name" id="telephone" value="15000001111" readOnly>
+	</div>
+    <div data-role="footer" data-position="fixed">
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#BuzzIT" data-icon="star" class="star">BuzzIT</a></li>
+                <li><a href="#LocalSite" data-icon="star" >LocalSite</a></li>
+                <li><a href="#Printer" data-icon="star">Printer</a></li>
+            </ul>
+        </div><!-- /navbar -->
+    </div>
+<!-- /footer -->
+</div>
+
+<!-- show page2 -->
+<div data-role="page" id="showpage2">
+	<div data-role="header" data-position="inline">
+	<h1>详细信息</h1>
+    </div>
+    <div>
+		<label id="city">Site：CD</label>
+			<label for="sLine">Service Line:</label>
+			<input type="text" name="name" id="sLine" value="" readOnly >
+			<label for="dNumber">Direct Number:</label>
+			<input type="text" name="name" id="dNumber" value="" readOnly>
+			<label for="notesId">Notes ID:</label>
+			<input type="text" name="name" id="notesId" value="" readOnly>
+			<label for="ecNumber">Emergency Contact Number:</label>
+			<input type="text" name="name" id="ecNumber" value="" readOnly>
+	</div>
+    <div data-role="footer" data-position="fixed">
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#BuzzIT" data-icon="star" class="star">BuzzIT</a></li>
+                <li><a href="#LocalSite" data-icon="star" >LocalSite</a></li>
+                <li><a href="#Printer" data-icon="star">Printer</a></li>
+            </ul>
+        </div><!-- /navbar -->
+    </div>
+<!-- /footer -->
+</div>
+
+<script>
+function showPhone(text,telephone){
+	var descInfo="职责：<br/>"+(text==''?'请详询相关人员.':text);
+	var person=$("#personDesc");
+	$("#telephone").val(telephone);
+	person.empty();
+	person.append(descInfo); 
+	
+	 $.mobile.changePage('#show','pop');
+}
+function showPhone2(city,sLine,dNumber,notesId,ecNumber){
+	$("#city").empty();
+	$("#sLine").empty();
+	$("#dNumber").empty();
+	$("#notesId").empty();
+	$("#ecNumber").empty();
+	
+	$("#city").append("Site:"+city);
+	$("#sLine").val(sLine);
+	$("#dNumber").val(dNumber);
+	$("#notesId").val(notesId);
+	$("#ecNumber").val(ecNumber);
+	 $.mobile.changePage('#showpage2','pop');
+	
+}
+</script>
+</body>
+</html>
